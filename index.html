@@ -9,6 +9,33 @@
         <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     </head>
 
+
+    <body onload="addEvent()">
+        <script>
+            function addEvent(){
+                document.body.addEventListener("click", play)
+            }
+            function play() {
+                var audio = document.getElementById("bgm");
+                audio.play();
+            }
+        </script>
+
+
+
+        <div id="contents" >
+
+            <audio id="bgm" preload="auto" autoplay loop>
+                <source src="bgm.mp3" type="audio/mp3">
+            </audio>
+
+
+
+            <div>
+            
+            <p class="textContent" style="padding-top:1000vw;padding-bottom:50vw;"></p>
+
+
     <body>
         <!-- <img style="margin-top:3vw;width:100%;height:auto;" src="rock.jpg" alt=""/> -->
             <div>
